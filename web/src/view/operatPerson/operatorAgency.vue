@@ -77,7 +77,7 @@
 </template>
 
 <script>
-import { getDrillhole, getSearch } from '../../api/api'
+import { getDrillhole, getSearch, deleteChamber } from '../../api/api'
 export default {
   name: 'operatPerson',
   data () {
@@ -115,6 +115,7 @@ export default {
     this.initData()
     this.aa()
     this.bb()
+    this.cc()
   },
   methods: {
     initData () {
@@ -138,6 +139,12 @@ export default {
     async bb () {
       let c = [{'code': 'string'}]
       await getSearch(c).then(res => {
+        console.log(res)
+      })
+    },
+    async cc () {
+      let b = {'code': 1}
+      await deleteChamber(b).then(res => {
         console.log(res)
       })
     },
@@ -176,7 +183,7 @@ export default {
     padding: 15px;
     overflow-y: auto;
     .el-button {
-      padding: 7px 26px
+      padding: 7px 20px
     }
     .el-form-item {
       margin-bottom: 6px
