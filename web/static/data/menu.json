@@ -1,0 +1,107 @@
+{
+  "result": {
+    "total": 111,
+    "rows": [{
+      "id": 1,
+      "label": "运营人员",
+      "children": [{
+        "id": 11,
+        "label": "运营人员待办",
+        "url": "/operatPerson/operatorAgency"
+      }, {
+        "id": 12,
+        "label": "运营人员审批",
+        "url": "/operatPerson/operatorApproval"
+      }]
+    }, {
+      "id": 2,
+      "label": "医学经理",
+      "children": [{
+        "id": 21,
+        "label": "个案服务待办",
+        "url": "/medicalManager/medicalAgency"
+      }, {
+        "id": 22,
+        "label": "分配个案管理师",
+        "url": "/medicalManager/distributCaseManager"
+      }, {
+        "id": 23,
+        "label": "管理医院信息",
+        "url": "/medicalManager/manageHospitalInfo"
+      }]
+    }, {
+      "id": 3,
+      "label": "个案管理师",
+      "children": [{
+        "id": 31,
+        "label": "个案服务待办",
+        "url": "/caseManager/caseServiceAgency"
+      }, {
+        "id": 32,
+        "label": "录入门诊信息",
+        "url": "/caseManager/enterOutpatientInfo"
+      }, {
+        "id": 33,
+        "label": "录入住院信息",
+        "url": "/caseManager/enterInpatientInfo"
+      }, {
+        "id": 34,
+        "label": "录入出院信息",
+        "url": "/caseManager/enterDischargeInfo"
+      }, {
+        "id": 35,
+        "label": "录入随诊信息",
+        "url": "/caseManager/enterAdmissionInfo"
+      }]
+    }, {
+      "id": 4,
+      "label": "药房服务人员",
+      "children": [{
+        "id": 41,
+        "label": "药房待办功能",
+        "url": "/pharmacyService/pharmacyFun"
+      }, {
+        "id": 42,
+        "label": "药品查询功能",
+        "url": "/pharmacyService/drugQueryFun"
+      }]
+    }, {
+      "id": 5,
+      "label": "费控人员审核",
+      "children": [{
+        "id": 51,
+        "label": "处方审核",
+        "url": "/feeControlReview/prescriptionReview"
+      }, {
+        "id": 52,
+        "label": "资格审核",
+        "url": "/feeControlReview/qualificationReview"
+      }]
+    }, {
+      "id": 6,
+      "label": "理赔人员审核",
+      "children": [{
+        "id": 61,
+        "label": "理赔审核功能",
+        "url": "/claimAuditors/claimAuditFun"
+      }]
+    }, {
+      "id": 7,
+      "label": "供应商管理",
+      "children": [{
+        "id": 71,
+        "label": "医院医生维护",
+        "url": "/supplierManagement/hospitalDoctorMaintense"
+      }, {
+        "id": 72,
+        "label": "运营人员审批医生",
+        "url": "/supplierManagement/approvingDoctors"
+      }]
+    }]
+  },
+  "targetUrl": null,
+  "success": true,
+  "error": null,
+  "unAuthorizedRequest": false,
+  "__abp": true
+}
