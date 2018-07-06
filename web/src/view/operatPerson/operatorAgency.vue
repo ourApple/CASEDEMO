@@ -77,6 +77,7 @@
 </template>
 
 <script>
+import { getDrillhole, getSearch } from '../../api/api'
 export default {
   name: 'operatPerson',
   data () {
@@ -113,6 +114,7 @@ export default {
   created () {
     this.initData()
     this.aa()
+    this.bb()
   },
   methods: {
     initData () {
@@ -128,11 +130,15 @@ export default {
         console.log(err)
       })
     },
-    aa () {
-      this.$http.get('/api/drillhole').then(res => {
-        // console.log(res)
-      }).catch(err => {
-        console.log(err)
+    async aa () {
+      await getDrillhole().then(res => {
+        console.log(res)
+      })
+    },
+    async bb () {
+      let c = [{'code': 'string'}]
+      await getSearch(c).then(res => {
+        console.log(res)
       })
     },
     handleCurrentChange (val) {
